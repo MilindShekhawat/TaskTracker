@@ -1,22 +1,22 @@
 # TaskTracker
-RESTFUL API written in java that communicates with a postgreSQL database to perform CRUD operations.
+RESTful API written in Java that communicates with a PostgreSQL database to perform CRUD operations.
 
 ## How To Use
 Download the zip or clone this project.
 
 To run this Project you'll need an IDE like Maven or Intellij.
 
-1. First of all go to applications.properties and setup your username and password of you postgreSQL database.
+1. First of all, go to `applications.properties` and setup your username and password of your postgreSQL database.
 There is no need to create a database as the application does it itself.
 The application creates a database tasktracker with following attributes.
 
 ```
-  |    id    |  title  |  description  |  due_date  | 
+  |    id    |  title  |  description  | due_date  | 
   +----------+---------+---------------+-----------+ 
-  |  String  |  String |    String     |    Date   |
+  |  String  |  String |    String     |   Date    |
 ```
-&emsp;id is our primary key. <br>
-&emsp;id is written in a format T\<number\> such as `T1`.
+&emsp;`id` is our primary key. <br>
+&emsp;`id` is written in a format `T<number>` such as `T1`.
 
 2. Run the TaskTrackerApplication. The localhost server is running on port 8080 by default. We can access the server by going to 
 &emsp;```http://localhost:8080/tasks```
@@ -36,10 +36,10 @@ The application creates a database tasktracker with following attributes.
 + PUT Requests
   + `http://localhost:8080/tasks/{id}`: 
     Edit a task by id. <br>
-  `http://localhost:8080/tasks/T1?due_date=2023-08-08`: Updates date of task with id T1.
+  `http://localhost:8080/tasks/T1?due_date=2023-08-08`: Updates date of the task with id T1.
 
 ## Functionality
-The application hai multiple classes.
+The application has multiple classes.
 ### TaskTrackerApplication
 &emsp;Base Spring Boot application.
 ### TaskTracker
