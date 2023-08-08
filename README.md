@@ -8,7 +8,7 @@ To run this Project you'll need an IDE like Maven or Intellij.
 
 1. First of all, go to `applications.properties` and setup your username and password of your postgreSQL database.
 There is no need to create a database as the application does it itself.
-The application creates a database tasktracker with following attributes.
+The application creates a database tasktracker with the following attributes.
 
 ```
   |    id    |  title  |  description  | due_date  | 
@@ -18,7 +18,7 @@ The application creates a database tasktracker with following attributes.
 &emsp;`id` is our primary key. <br>
 &emsp;`id` is written in a format `T<number>` such as `T1`.
 
-2. Run the TaskTrackerApplication. The localhost server is running on port 8080 by default. We can access the server by going to 
+2. Run the `TaskTrackerApplication` Java class. The localhost server is running on port 8080 by default. We can access the server by going to 
 &emsp;```http://localhost:8080/tasks```
 
 4. The API can perform all CRUD operations. We can use Postman to perform all requests. The API returns output in .json format.
